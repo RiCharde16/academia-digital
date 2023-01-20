@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 @RestController
 @RequestMapping("/alunos")
@@ -32,6 +35,10 @@ public class AlunoController {
                                   String dataDeNacimento){
     return service.getAll(dataDeNacimento);
   }
-
+  // @GetMapping("")
+  // public SomeData getMethodName(@RequestParam String param) {
+  //     return new SomeData();
+  // }
+  
 
 }
